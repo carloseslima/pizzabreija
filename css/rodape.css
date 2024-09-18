@@ -1,0 +1,105 @@
+.ad1{
+    width: 70%;
+    margin: 10px auto;
+    background-color: var(--laranja-1);
+}
+
+#whatsapp img{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    height: 50px;
+    filter: drop-shadow(1px 1px 5px #0000004f);
+}
+
+.whatsapp{
+    animation: whatsapp 2s infinite;
+}
+@keyframes whatsapp {
+    0% {transform: translateX(0deg);}
+    50% {transform: translateX(10px);}
+    100% {transform: translateX(0deg);}
+}
+
+
+
+/* ESTILOS DO RODAPÉ ==================*/
+
+footer{
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-top: 20px solid var(--laranja-1);
+}
+
+footer img{
+    width: 70px;
+    margin: 20px 0 0 0;
+}
+
+footer h2{
+    font-size: 10pt;
+    margin: 12px;
+    color: var(--laranja-1);
+}
+
+footer p{
+    font-size: 8pt;
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--laranja-1);
+}
+
+footer p a:hover{
+    color: var(--laranja-1-hover);
+}
+
+#desenvolvedor{
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    text-align: center;       
+    background-color: var(--laranja-1);
+    width: 100%;
+}
+
+#desenvolvedor a{
+    color:#000;
+}
+
+#desenvolvedor a:hover{
+    color: #4c4c4c;
+}
+
+#cookie-message{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--laranja-1);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -5px 20px #00000063;
+}
+
+#cookie-message button{
+    color: #fff;
+    background: green;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cookie-message button:hover{
+    background-color: greenyellow;
+    color: #000;
+}

@@ -1,0 +1,91 @@
+#menu-bar{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#input-menu{
+    display: none;
+}
+
+#label-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Righteous', sans-serif;  
+    font-weight: lighter;  
+}
+
+#label-menu span{
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#menu{
+    display: flex;
+    background-color: #fff;
+    position: absolute;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+    font-family: 'Righteous', sans-serif;
+    box-shadow: 1px 1px 10000px #000;
+}
+
+#close-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00851d;
+    color: #fff;
+    font-size: 18pt;
+    text-transform: uppercase;
+    padding: 0 0 0 20px;
+}
+
+#close-menu p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+#close-menu p:hover{
+    background-color: var(--laranja-1-hover);
+}
+
+#menu a{
+    text-decoration: none;
+    color: var(--preto-1);
+    font-weight: lighter;
+    padding: 20px 10px;
+    font-size: 15pt;
+}
+
+#menu a:hover{
+    background-color: var(--laranja-1-hover);
+}
+
+#input-menu:checked ~ #menu{
+    left: 0;
+}
+
+#input-close-menu{
+    display: none;
+}
